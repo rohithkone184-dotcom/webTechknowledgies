@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Calculations</title>
+</head>
+<body>
+  <h2>Calculator</h2>
+  <label for="num1">Enter the first number:</label>
+  <input type="number" id="num1"><br><br>
+<label for="num2">Enter the second number:</label>
+  <input type="number" id="num2"><br><br>
+  <button onclick="calculate()">Calculate</button>
+  <h5 id="results"></h5>
+   <script>
+    function calculate() {
+      let a = parseInt(document.getElementById("num1").value);
+      let b = parseInt(document.getElementById("num2").value);
+let output = "";
+      output += "<p>Addition:" +(a+b)+"</p>";
+      output += "<p>Subtraction:"+(a-b)+"</p>";
+      output += "<p>Multiplication:"+(a*b)+"</p>";
+      output += "<p>Division:"+(a/b)+"</p>";
+    document.getElementById("results").innerHTML = output;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>registration</title>
+    <link rel="stylesheet" href="regcss.css">
+</head>
+
+<body>
+    <form action="#" method="get">
+        <label for="fn">FIRST NAME</label>
+        <input type="text"
+               id="fn" 
+               name="fn"
+               required
+               placeholder="firstName">
+         <label for="ln">LAST NAME</label>
+        <input type="text"
+                id="ln"
+                name="lastName"
+                required
+                placeholder="lastname">
+                 <label for="pw">PASSWORD</label>
+                 <input type="password"
+                        id="pw"
+                        placeholder="password"
+                        required
+                       pattern="{0-9} [10]" >
+        <label for="dob">DATE OF BIRTH</label>
+        <input type="datetime"
+                id="ln"
+                name="dob"
+                requried>
+                 <label for="mobile">MOBILE</label>
+                 <input type="tel"
+                        id="mobile"
+                        name="mobile"
+                        placeholder="enter your mobile number"
+                        >
+            
+
+                  <label for="sal">SALARY</label>
+                  <input type="number"
+                          name="salary"
+                          id="sal"
+                          placeholder="salary"
+                          min="10000" max="2000000">
+
+                   <label for="mail">EMAIL</label>
+                   <input type="email"
+                           id="mail"
+                           placeholder="email"
+                           required> <br>
+                 
+                    <input id="rad"
+                            type="radio"
+                            value="male"
+                            name="gender"
+                            ><br>
+                       <label for="rad">male</label><br>
+                    <input id="dar"
+                            type="radio"
+                            value="male"
+                            name="gender"><br>
+<label for="dar">female</label>
+
+
+                     <label for="add">ADDRESS</label>
+                     <textarea 
+                     id="add"
+                     name="address"
+                     ></textarea>
+                     <h2>STATE</h2>
+                     <select name="state"> 
+                        <option value="">select state</option>
+
+                        <option value="andhra pradesh">andhra pradesh</option>
+                        <option value="telangana">telangana</option>
+                        <option value="karnataka">karnataka</option>
+                        <option value="kerala">kerala</option>
+                        <option value="madyapradesh">madyapradesh</option>
+                        <option value="odisa">odisa</option>
+
+                     </select>
+         <input class="fin"  type="submit"
+         value="FINISH">
+
+
+
+    </form>
+</body>
+</html>
