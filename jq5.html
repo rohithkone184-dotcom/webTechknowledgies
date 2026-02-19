@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<button id="down">Slide Down</button>
+<button id="up">Slide Up</button>
+<button id="toggle">Toggle</button>
+<button id="stop">Stop</button>
+
+<div id="box" style="display:none; background:rgb(155, 255, 159); padding:20px; margin-top:10px; border: 2px solid rgb(107, 107, 255);">
+  d <br>
+  e <br>
+  s <br>
+  t <br>
+  r <br>
+  o <br>
+  y <br>
+  e <br>
+  r
+</div>
+
+<script>
+$("#down").click(function(){
+  $("#box").slideDown(1000);
+});
+
+$("#up").click(function(){
+  $("#box").slideUp(1000);
+});
+
+$("#toggle").click(function(){
+  $("#box").slideToggle(1000);
+});
+
+$("#stop").click(function(){
+  $("#box").stop();
+});
+</script>
+
+</body>
+</html>
